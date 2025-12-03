@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Batik- NFStore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="topbar">
+      <span>NFStore.com</span>
+      <nav>
+        <a href="#">Fashion Pria</a>
+        <input type="text" placeholder="Search..." />
+        <a href="#">Cart (1)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="product-container">
+    <nav class="breadcrumb">
+      Home > Fashion Pria > Batik
+    </nav>
+
+    <div class="product-content">
+      <div class="product-image">
+        <img src="Batik 1.webp" alt="Batik" />
+        <div class="thumbnail-row">
+          <img src="Batik2.webp" alt="Thumb 1" />
+          <img src="Batik3.webp" alt="Thumb 2" />
+          <img src="Batik4.webp" alt="Thumb 3" />
+        </div>
+      </div>
+
+      <div class="product-details">
+        <h1>Batik</h1>
+        <p class="price">Rp. 100.000</p>
+        <p>⭐⭐⭐⭐⭐ 80 ulasan</p>
+
+        <div class="variant">
+          <p>Pilih Varian:</p>
+          <div class="colors">
+            <button>Hitam</button>
+            <button>Putih</button>
+            <button>Navy</button>
+            <button>Merah</button>
+          </div>
+        </div>
+
+        <div class="size">
+          <p>Ukuran:</p>
+          <div class="sizes">
+            <button>M</button>
+            <button>L</button>
+            <button>XL</button>
+            <button>XXL</button>
+          </div>
+        </div>
+
+        <button class="buy-button">Pesan</button>
+      </div>
+    </div>
+
+    <section class="description">
+      <h2>Deskripsi Produk</h2>
+      <p>
+        Produk: Batik produk <br>
+        Bahan: Katun Halus <br>
+        Warna: Hitam, Putih, Navy, Merah <br>
+        Ukuran: M, L, XL, XXL <br>
+        Batik Keren Yang Akan Menunjang Anda Dalam Berpenampilan. <br>
+      </p>
+    </section>
+  </main>
+
+</body>
+</html>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+  }
+
+  .topbar {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .topbar nav a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+  }
+
+  .topbar input[type="text"] {
+    padding: 5px;
+  }
+
+  .product-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+  }
+
+  .breadcrumb {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+
+  .product-content {
+    display: flex;
+    gap: 20px;
+  }
+
+  .product-image img {
+    width: 400px;
+    height: auto;
+  }
+
+  .thumbnail-row img {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .product-details {
+    flex-grow: 1;
+  }
+
+  .price {
+    color: #e74c3c;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .variant, .size {
+    margin-top: 20px;
+  }
+
+  .colors button, .sizes button {
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #ddd;
+  }
+
+  .buy-button {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .description {
+    margin-top: 40px;
+  }

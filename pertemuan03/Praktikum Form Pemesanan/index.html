@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DICE Boardgame-Reservasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Logout</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="result.html" method="get">
+            <div class="form-container">
+                <div class="image-upload">
+                    <label>Upload Picture</label>
+                    <input type="file" name="picture">
+                    <img src="assets/dice.png" alt="dice image">
+                </div>
+
+                <div class="form-fields">
+                    <label>Name :</label>
+                    <input type="text" name="name" value="">
+
+                    <label>Tanggal Kedatangan :</label>
+                    <input type="text" name="Tanggal Kedatangan">
+
+                    <label>Jumlah Pemain:</label>
+                    <input type="text" name="jumlah pemain">
+
+                    <label>Nomor Telepon:</label>
+                    <input type="text" name="no">
+
+                    <label>Bank :</label>
+                    <select name="bank">
+                       <option value="BCA">BCA</option>
+                        <option value="BNI">BNI</option>
+                        <option value="Mandiri">Mandiri</option>
+                        <option value="BRI">BRI</option>
+                        <option value="Dana">Dana</option>
+                        <option value="OVO">OVO</option>
+                        <option value="GOPAY">GOPAY</option>
+
+                    </select>
+
+                    <label>Table :</label>
+                    <select name="table">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+
+                    <label><input type="checkbox" name="send_sms" checked> Send to Mobile Phone</label>
+                    <label><input type="checkbox" name="send_email"> Send to Email</label>
+
+                    <label>Send to Mobile Phone :</label>
+                    <input type="text" name="phone">
+
+                    <label>Send to Email :</label>
+                    <input type="email" name="email">
+
+                    <button type="submit">Buat Reservasi</button>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
+
+<link rel="stylesheet" href="style.css">
+

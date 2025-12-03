@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.fieldset-style {
+  margin: 10px auto;
+  max-width: 600px;
+  background-color: rgb(200, 200, 22);
+  border: 1px solid rgb(146, 146, 88);
+}
+
+.text-orange {
+  color: #08fb10e0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.border-style {
+  border-style: solid;
+  border-width: 2px;
+}
+
+.border-lightblue {
+  border-color: lightblue;
+}
+
+.border-lightsalmon {
+  border-color: lightsalmon;
+}

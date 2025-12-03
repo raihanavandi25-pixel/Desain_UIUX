@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hasil Reservasi - DICE Boardgame</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eaffea;
+      padding: 30px;
+    }
+
+    .result-box {
+      background-color: #caffca;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 700px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0, 100, 0, 0.3);
+    }
+
+    h2 {
+      text-align: center;
+      color: #004d00;
+    }
+
+    .data-row {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    strong {
+      color: #003300;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 120px;
+    }
+
+    .back-button {
+      display: block;
+      margin: 30px auto 0;
+      padding: 10px 20px;
+      background-color: #006600;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      width: fit-content;
+    }
+
+    .back-button:hover {
+      background-color: #004d00;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="result-box">
+    <div class="logo">
+      <img src="assets/dice.png" alt="Dice Logo">
+    </div>
+
+    <h2>✅ Bukti Reservasi Anda</h2>
+    <div id="output"></div>
+
+    <a href="index.html" class="back-button">🔙 Kembali ke Form</a>
+  </div>
+
+  <script>
+    function tampilkanHasilReservasi() {
+      const params = new URLSearchParams(window.location.search);
+      const output = document.getElementById('output');
+
+      const data = {
+        "Nama Pemesan": params.get("title"),
+        "Tanggal Kedatangan": params.get("Date of arrival"),
+        "Jumlah Pemain": params.get("Player"),
+        "Nomor Rekening": params.get("account"),
+        "Bank": params.get("bank"),
+        "Nomor Meja": params.get("table"),
+        "Dikirim ke HP": params.has("send_sms") ? "Ya" : "Tidak",
+        "Nomor HP": params.get("phone"),
+        "Dikirim ke Email": params.has("send_email") ? "Ya" : "Tidak",
+        "Email": params.get("email")
+      };
+
+      for (const key in data) {
+        const value = data[key] || "-";
+        output.innerHTML += `<div class="data-row"><strong>${key}:</strong> ${value}</div>`;
+      }
+    }
+
+    tampilkanHasilReservasi();
+  </script>
+
+</body>
+</html>
