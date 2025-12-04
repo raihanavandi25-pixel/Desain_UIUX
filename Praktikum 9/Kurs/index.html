@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Valas</title>
+</head>
+<body>
+    <fieldset>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="number" id="nilai" placeholder="Masukkan jumlah">
+                    </td>
+                    <td>
+                        <select name="valas" id="valas">
+                            <option value="">-- Pilih Valas --</option>
+                            <option value="usd">US Dollar</option>
+                            <option value="sgd">Dollar Singapore</option>
+                            <option value="rm">Ringgit Malaysia</option>
+                            <option value="yen">Yen Jepang</option>
+                            <option value="eur">Euro</option>
+                            <option value="sar">Riyal Arab Saudi</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" id="rupiah" readonly placeholder="Hasil dalam Rupiah">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+<script src="script.js"></script>
+</body>
+</html>

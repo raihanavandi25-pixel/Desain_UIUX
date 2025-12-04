@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        #container {
+            width: 300px;
+            border: 1px solid #666;
+            padding: 10px;
+        }
+
+        #preview {
+            margin-top: 10px;
+            width: 280px;
+            height: 320px;
+            border: 1px solid #aaa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #preview img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Image Picker</h3>
+
+    <select id="imageSelect">
+    <option value="">-- Pilih Gambar --</option>
+    <option value="bison.jpg">Bison</option>
+    <option value="gorila.jpg">Gorila</option>
+    <option value="elang.jpg">Elang</option>
+    <option value="zebra.jpg">Zebra</option>
+</select>
+
+
+        <div id="preview">
+            <span>Belum ada gambar</span>
+        </div>
+    </div>
+
+    <script src="imagepicker.js"></script>
+
+</body>
+</html>
